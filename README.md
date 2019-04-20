@@ -7,7 +7,7 @@ Vision code for P100 quadrotor platform
 
 发布话题适用于椭圆、二维码、yolo等视觉算法
 
-##安装
+## 安装
 ```
 cd ~
 mkdir vision_ws
@@ -19,7 +19,7 @@ cd ..
 catkin_make
 ```
 
-##相机标定
+## 相机标定
 ```
 rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.0245 image:=/usb_cam/image_raw camera:=/usb_cam
 ```
@@ -37,7 +37,7 @@ vision_ws/src/vision_ws/ellipse_det_ros/launch/ellipse_det_wt.launch
 vision_ws/src/vision_ws/landpad_det_ros/launch/landpad_det.launch
 ```
 
-##运行
+## 运行
 1.降落板检测
 ```
 roslaunch aruco_det aruco_det.launch # 二维码检测
