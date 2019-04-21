@@ -4,6 +4,6 @@
 	<node pkg="landpad_det" type="landpad_det" name="landpad_det" output="screen">
 
 		<!-- load blacklist, config -->
-                <rosparam command="load" file="/home/nvidia/vision_ws/config/camera_param.yaml" />
+                <rosparam command="load" file="$(find vision_ws)/config/camera_param.yaml" />
 	</node>
 </launch>
